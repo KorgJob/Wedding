@@ -1,0 +1,7 @@
+@font-face { font-family: "Bodoni"; src: local("Bodoni"), local("BodoniC"), local("Bodoni Cyrillic"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/bodoni-moda-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/bodoni-moda-italic.ttf") format("truetype"); font-style: italic; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Prata"; src: url("../assets/fonts/prata-regular.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Classica Two"; src: url("../assets/fonts/Classica%20Two.ttf") format("truetype"); font-style: normal; font-weight: 400; font-display: swap; }
+@font-face { font-family: "Manrope"; src: url("../assets/fonts/manrope-regular.ttf") format("truetype"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Manrope"; src: url("../assets/fonts/manrope-medium.ttf") format("truetype"); font-weight: 500; font-style: normal; font-display: swap; }

@@ -1,0 +1,25 @@
+@keyframes enter { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes rule { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+@keyframes header-appear { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+.hero-kicker { animation: enter .9s var(--ease) both; }
+.hero-title { animation: enter 1.2s .12s var(--ease) both; }
+.hero-rule { animation: rule 1.2s .35s var(--ease) both; }
+.hero-names { animation: enter 1.2s .35s var(--ease) both; }
+.reveal-pending { opacity: 0; transform: translateY(24px); }
+.reveal-pending.is-visible { opacity: 1; transform: translateY(0); transition: opacity 1s var(--ease), transform 1.15s var(--ease); transition-delay: var(--reveal-delay, 0ms); }
+
+.photo-reveal-pending { opacity: 0; translate: 0 18px; }
+.photo-reveal-pending.is-visible { opacity: 1; translate: 0 0; transition: opacity var(--photo-reveal-duration, 1.9s) linear, translate var(--photo-reveal-duration, 1.9s) linear; transition-delay: var(--reveal-delay, 0ms); }
+.calendar-grid { animation: enter .35s var(--ease) both; }
+@keyframes viewer-appear { from { opacity: 0; } to { opacity: 1; } }
+.photo-viewer[open] { animation: viewer-appear .35s linear both; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto !important; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal-pending { opacity: 1; transform: none; }
+  .photo-reveal-pending { opacity: 1; translate: none; }
+}
+@supports not (translate: 0) {
+  .photo-reveal-pending { translate: none; }
+  .photo-reveal-pending.is-visible { transition: opacity var(--photo-reveal-duration, 1.9s) linear; transition-delay: var(--reveal-delay, 0ms); }
+}
